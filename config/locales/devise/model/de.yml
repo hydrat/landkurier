@@ -1,0 +1,11 @@
+de:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "Leer"
+            password:
+              blank: "Leer"
+  

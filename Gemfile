@@ -8,6 +8,7 @@ gem 'devise'
 
 gem 'nifty-generators', :group => :development
   
+# See also http://blog.notahat.com/posts/43
 group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'

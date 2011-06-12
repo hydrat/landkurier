@@ -14,10 +14,10 @@
       <div id="user_nav">
         <% if user_signed_in? %>
           Angemeldet als <%= current_user.email %>. Stimmt nicht?
-          <%= link_to "Abmelden", destroy_user_session_path %>
+          <%= link_to "Abmelden", logout_path %>
         <% else %>
-          <%= link_to "Registrieren", new_user_registration_path %> or 
-          <%= link_to "Anmelden", new_user_session_path %>
+          <%= link_to "Registrieren", register_path %> or 
+          <%= link_to "Anmelden", login_path %>
         <% end %>
       </div>
 
