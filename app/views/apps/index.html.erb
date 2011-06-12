@@ -1,0 +1,13 @@
+<% title "Apps" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for app in @apps %>
+    <tr>
+      <td><%= app.name %></td>
+    </tr>
+  <% end %>
+</table>
+
