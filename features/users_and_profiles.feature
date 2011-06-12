@@ -9,8 +9,7 @@ Feature: Users and Profiles
     | member@landkurier.ch | secret   |
     
   Scenario: See sign up and login link when not registered
-    Given I have the email "guest@landkurier.ch"
-    And I am not registered
+    Given I am not registered with the email "guest@landkurier.ch"
     When I am on the homepage
     Then I should see a link "Registrieren"
     And I should see a link "Anmelden"
