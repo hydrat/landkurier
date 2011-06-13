@@ -16,7 +16,7 @@ group :development, :test do
   gem 'cucumber-rails'
   # Problems while factory_girl 2.0 is still in beta, see "Testing Book p.88"
   gem 'factory_girl_rails', :git => "https://github.com/CodeMonkeySteve/factory_girl_rails.git"
-  gem 'mocha'
+  # gem 'mocha'
   gem 'pickle'
   gem 'launchy'
 end

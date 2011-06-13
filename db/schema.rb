@@ -10,9 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110612113726) do
+ActiveRecord::Schema.define(:version => 20110613132453) do
 
   create_table "apps", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "combos", :force => true do |t|
+    t.decimal  "price",      :precision => 8, :scale => 2
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"

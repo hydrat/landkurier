@@ -1,0 +1,6 @@
+<h1><%= Combo.model_name.human %></h1>
+
+<p>
+  <%= Combo.human_attribute_name("price") %>:
+  <%= number_to_francs(@combo.price) %>
+</p> 
