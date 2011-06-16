@@ -6,16 +6,16 @@ Feature: Subscribe to a Combo (Gemueseabo)
   
   Scenario Outline: Show the formatted price
     Given a combo costing <price>
-    When I am on the show page
+    When I am on the show page for that model
     Then I should see the <formatted_price>
   
   Scenarios: Swiss francs
     | price | formatted_price |
-    | 20 | CHF 20.- |
-    | 30.00 | CHF 30.- |
+    | 20 | CHF 20.00 |
+    | 30.00 | CHF 30.00 |
     | 19.90 | CHF 19.90 |
     | 0.95 | CHF 0.95 |
-    | 1.98 | CHF 2.- |
+    | 1.98 | CHF 2.00 |
     | 2.37 | CHF 2.35 |
     | 1.125 | CHF 1.50 |   
   
