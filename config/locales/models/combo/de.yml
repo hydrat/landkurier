@@ -9,3 +9,4 @@ de:
         type: "Abotyp"
         price: "Preis"
         size: "Grösse"
+        provider: "Anbieter"

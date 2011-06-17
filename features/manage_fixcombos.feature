@@ -7,8 +7,8 @@ Feature: Manage fixcombos
   Scenario: Register new fixcombos
     Given I am on the new combo page
     When I provide the details for a fixcombo
-    And I press "Create"
-    Then I should be on the show combo page
+    And I press the submit button
+    Then I should go to the show combo page
     And I should see the fixcombo in my portfolio
 
     Scenario: Create a combo

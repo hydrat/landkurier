@@ -10,12 +10,11 @@ describe "combos/new.html.erb" do
     # ).as_null_object.as_new_record
     assigns[:combo] = @combo
   end
+  
   it "should have a complete form for Combo" do
-
     render #:template => "combos/new.html.erb"
 
     view.should render_template(:new)
-
     rendered.should have_selector("form select[@id='combo_type']")
     rendered.should have_selector("form input[@id='combo_name']")
     rendered.should have_selector("form textarea[@id='combo_description']")

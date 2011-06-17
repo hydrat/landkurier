@@ -23,6 +23,10 @@ GEM
       rack-mount (~> 0.6.14)
       rack-test (~> 0.5.7)
       tzinfo (~> 0.3.23)
+    activemerchant (1.15.0)
+      activesupport (>= 2.3.8)
+      braintree (>= 2.0.0)
+      builder (>= 2.0.0)
     activemodel (3.0.8)
       activesupport (= 3.0.8)
       builder (~> 2.1.2)
@@ -38,6 +42,8 @@ GEM
     activesupport (3.0.8)
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
+    braintree (2.10.1)
+      builder (>= 2.0.0)
     builder (2.1.2)
     capybara (1.0.0.rc1)
       mime-types (>= 1.16)
@@ -145,6 +151,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant
   capybara
   cucumber-rails
   database_cleaner
