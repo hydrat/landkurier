@@ -18,8 +18,6 @@ Landkurier::Application.routes.draw do
 
   end
 
-  resources :combos
-  
   # See http://www.nicolaracco.com/en/articles/customize-rails-routes-root
   match '/(:locale)' => 'apps#index', :as => :root
 end

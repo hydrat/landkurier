@@ -1,7 +1,9 @@
 de:
   activerecord:
     models:
-      combo: Gemüseabo
+      combo: "Abo"
     attributes:
       combo:
-        price: "Preis"  
+        name: "Bezeichnung"
+        type: "Abotyp"
+        price: "Preis"

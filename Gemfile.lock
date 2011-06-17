@@ -130,6 +130,7 @@ GEM
       ffi (>= 1.0.7)
       json_pure
       rubyzip
+    simple_form (1.4.1)
     term-ansicolor (1.0.5)
     thor (0.14.6)
     treetop (1.4.9)
@@ -155,3 +156,4 @@ DEPENDENCIES
   pickle
   rails (= 3.0.8)
   rspec-rails
+  simple_form

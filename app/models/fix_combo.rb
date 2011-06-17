@@ -1,0 +1,2 @@
+class FixCombo < Combo
+end

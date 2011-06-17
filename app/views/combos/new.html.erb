@@ -1,0 +1,10 @@
+<% title t('.title') %>
+
+<%= simple_form_for @combo do |f| %>
+  <%= f.error_messages %>
+  <%= f.input :type, :collection => ['FixCombo', 'FlexCombo'] %>
+  <%= f.input :name %>
+  <%= f.input :price %>
+  <%= f.submit %>
+
+<% end %>

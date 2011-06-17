@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= t('landkurier') %> - <%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
     <%= stylesheet_link_tag "application" %>
+    <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]>
+      <link rel="stylesheet" href="/stylesheets/blueprint/ie.css" type="text/css" media="screen, projection">
+    <![endif]--></code></pre>
+    
     <%= javascript_include_tag :defaults %>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
   <body>
-    
     <div id="container">
       
       <div id="user_nav">
@@ -26,6 +31,7 @@
       <% end %>
       <%= content_tag :h1, yield(:title) if show_title? %>
       <%= yield %>
+      
     </div>
   </body>
 </html>

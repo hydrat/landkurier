@@ -6,6 +6,8 @@ gem 'pg'
 
 gem 'devise'
 
+gem 'simple_form'
+
 gem 'nifty-generators', :group => :development
   
 # See also http://blog.notahat.com/posts/43
