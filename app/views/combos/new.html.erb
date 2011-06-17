@@ -4,7 +4,10 @@
   <%= f.error_messages %>
   <%= f.input :type, :collection => ['FixCombo', 'FlexCombo'] %>
   <%= f.input :name %>
+  <%= f.input :description %>
   <%= f.input :price %>
+  <%= f.input :size %>
+  
   <%= f.submit %>
 
 <% end %>

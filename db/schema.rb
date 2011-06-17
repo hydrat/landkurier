@@ -19,9 +19,12 @@ ActiveRecord::Schema.define(:version => 20110613132453) do
   end
 
   create_table "combos", :force => true do |t|
+    t.integer  "provider_id"
     t.string   "name"
-    t.decimal  "price",      :precision => 8, :scale => 2
+    t.decimal  "price"
     t.string   "type"
+    t.string   "size"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
