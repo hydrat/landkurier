@@ -1,4 +1,10 @@
-<h2>Sign up</h2>
+<% title t('.title') %>
+
+<%#= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%#= f.input :email %>
+  <%#= f.input :password %>
+  <%#= f.input :password_confirmation %>
+  <%#= f.input :producer %>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -12,7 +18,12 @@
   <p><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></p>
 
-  <p><%= f.submit "Sign up" %></p>
+  <p><%= f.label :producer %><br />
+  <%= f.check_box :producer %></p>
+
+  <p>
+    <%= f.submit t('.submit') %> <%= t('or')%> <%= link_to t('cancel'), root_url %>
+  </p>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

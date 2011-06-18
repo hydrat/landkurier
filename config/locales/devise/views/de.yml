@@ -1,0 +1,19 @@
+de:
+  devise:
+    registrations:
+      new:
+        title: "Registration"
+        submit: "Erstellen"
+    sessions:
+      new:
+        title: "Anmeldung"
+        submit: "Anmelden"
+    passwords:
+      new:
+        title: "Passwort vergessen?"
+        submit: "Schicken Sie mir eine Anleitung um das Passwort zurückzusetzen"
+    confirmations:
+      new:
+        title: "Bestätigungsanleitung verschicken"
+        submit: "Erneut schicken"
+        

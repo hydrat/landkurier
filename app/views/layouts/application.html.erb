@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t('landkurier') %> - <%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= t('landkurier') %> - <%= content_for?(:title) ? yield(:title) : t.('untitled') %></title>
     <%= stylesheet_link_tag "application" %>
     <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print">
@@ -18,11 +18,11 @@
       
       <div id="user_nav">
         <% if user_signed_in? %>
-          Angemeldet als <%= current_user.email %>. Stimmt nicht?
-          <%= link_to "Abmelden", logout_path %>
+          <%= t('signed_in_as') %> <%= current_user.email %>. <%= t('notyou') %>
+          <%= link_to t('signout'), logout_path %>
         <% else %>
-          <%= link_to "Registrieren", register_path %> or 
-          <%= link_to "Anmelden", login_path %>
+          <%= link_to t('register'), register_path %> <%= t('or') %> 
+          <%= link_to t('signin'), login_path %>
         <% end %>
       </div>
 

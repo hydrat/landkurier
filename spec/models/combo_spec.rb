@@ -3,7 +3,7 @@ require 'spec_helper'
 describe Combo do
   
   it "should be valid" do
-    Combo.new.should be_valid
+    Combo.new(:name => "MyCombo", :price => 19.95).should be_valid
   end
   
 end

@@ -5,7 +5,8 @@ de:
         user:
           attributes:
             email:
-              blank: "Leer"
+              blank: "ist leer"
             password:
-              blank: "Leer"
-  
+              blank: "ist leer"
+              confirmation: "Bestätigung ist leer"
+              too_short: "ist zu kurz"  

@@ -11,7 +11,7 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
       
-    when /^the show combo page for (.*)/
+    when /^the show combo page/
       combo_path('de', 1001)
     
     when /the new combos page/

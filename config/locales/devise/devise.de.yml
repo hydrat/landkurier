@@ -3,21 +3,21 @@
 de:
   errors:
     messages:
-      expired: "has expired, please request a new one"
+      expired: "ist abgelaufen, bitte beantragen Sie ein neues."
       not_found: "nicht gefunden"
-      already_confirmed: "wurde bereits bestÃ¤tigt"
+      already_confirmed: "wurde bereits bestätigt"
       not_locked: "ist nicht gesperrt"
       not_saved:
-        one: "1 error prohibited this %{resource} from being saved:"
-        other: "%{count} errors prohibited this %{resource} from being saved:"
+        one: "Ein Fehler verhinderte die Erstellung Ihres Profils:"
+        other: "%{count} Fehler verhinderten die Erstellung Ihres Profils:"
 
   devise:
     failure:
       already_authenticated: 'Sie sind bereits angemeldet.'
-      unauthenticated: 'Sie mÃ¼ssen sich anmelden oder registrieren, bevor Sie weiterfahren kÃ¶nnen.'
-      unconfirmed: 'Sie mÃ¼ssen Ihren Account bestÃ¤tigen, bevor Sie weiterfahren kÃ¶nnen.'
+      unauthenticated: 'Sie müssen sich anmelden oder registrieren, bevor Sie weiterfahren können.'
+      unconfirmed: 'Sie müssen Ihren Account bestätigen, bevor Sie weiterfahren können.'
       locked: 'Ihr Account ist gesperrt.'
-      invalid: 'UngÃ¼ltige Anmeldedaten.'
+      invalid: 'Ungültige Anmeldedaten.'
       invalid_token: 'Invalid authentication token.'
       timeout: 'Ihre Sitzung ist abgelaufen, bitte melden Sie sich erneut an.'
       inactive: 'Ihr Account ist nicht aktiv.'
@@ -25,16 +25,16 @@ de:
       signed_in: 'Erfolgreich angemeldet.'
       signed_out: 'Erfolgreich abgemeldet.'
     passwords:
-      send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie ihr Passwort zurÃ¼cksetzten kÃ¶nnen.' 
-      updated: 'Ihr Passwort wurde geÃ¤ndert. Sie sind angemeldet.'
+      send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie ihr Passwort zurücksetzten können.' 
+      updated: 'Ihr Passwort wurde geändert. Sie sind angemeldet.'
     confirmations:
-      send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie ihr Passwort zurÃ¼cksetzten kÃ¶nnen.' 
-      updated: 'Ihr Passwort wurde geÃ¤ndert. Sie sind angemeldet.'
+      send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie ihr Passwort zurücksetzten können.' 
+      updated: 'Ihr Passwort wurde geändert. Sie sind angemeldet.'
     registrations:
       signed_up: 'Sie haben sich erfolgreich registriert. Es kann sein, dass Sie eine Aktivierungs-E-Mail erhalten.'
       inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
-      updated: 'Die Angaben wurden erfolgreich geÃ¤ndert.'
-      destroyed: 'Ihr Account wurde erfolgreich gelÃ¶scht.'
+      updated: 'Die Angaben wurden erfolgreich geändert.'
+      destroyed: 'Ihr Account wurde erfolgreich gelöscht.'
     unlocks:
       send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie Ihren Account entsperren kÃ¶nnen.'
       unlocked: 'Ihr Account wurde entsperrt. Sie sind angemeldet.'
@@ -43,8 +43,8 @@ de:
       failure: 'Sie konnten nicht mit dem %{kind}-Account angemeldet werden, weil "%{reason}".'
     mailer:
       confirmation_instructions:
-        subject: 'Anleitung zur BestÃ¤tigung Ihres Accounts'
+        subject: 'Anleitung zur Bestätigung Ihres Accounts'
       reset_password_instructions:
-        subject: 'Anleitung um das Passwort zurÃ¼ckzusetzten'
+        subject: 'Anleitung um das Passwort zurückzusetzten'
       unlock_instructions:
         subject: 'Anleitung um Ihren Account freizuschalten'

@@ -1,5 +1,6 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
+
 describe CombosController, "GET show" do
   
   def mock_combo(stubs={})
@@ -14,4 +15,65 @@ describe CombosController, "GET show" do
     response.should be_success
   end
   
+end
+
+
+describe CombosController, "POST create" do
+  before(:each) do
+    @combo = mock_model(Combo, :save => nil)
+    Combo.stub!(:new).and_return(@combo)
+  end
+
+  it "should built a new Combo" do
+    Combo.should_receive(:new).with("name" => "RSpecControllerCombo").and_return(@combo)
+    post :create, :combo => { "name" => "RSpecControllerCombo"}
+  end
+  
+  it "should save a new Combo" do
+    @combo.should_receive(:save)
+    post :create
+  end
+  
+  context "when the cobo saves successfully" do
+    before(:each) do
+      @combo.stub!(:save).and_return true
+    end  
+    
+    it "should set a flash[:notice] message" do
+      post :create
+      flash[:notice].should == "Sie haben erfolgreich ein neues Abo erstellt."
+    end
+
+    it "should render the show template" do
+      post :create
+      response.should redirect_to(combo_path(@combo.id))
+    end
+  end
+  
+  context "when the cobo fails to save" do
+    before(:each) do
+      @combo.stub!(:save).and_return false
+    end
+    
+    it "should assign @combo" do
+      post :create
+      assigns[:combo].should == @combo
+    end
+    
+    # it "should render the new template" do
+    #   post :create
+    #   response.should render_template(:new)
+    # end
+  end
+  
+end
+
+
+describe CombosController, "POST update" do
+
+  before(:each) do
+    @combo = mock_model(Combo)
+    Combo.stub!(:edit).and_return(@combo)
+  end
+
 end

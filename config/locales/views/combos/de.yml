@@ -1,6 +1,7 @@
 de:
   combos:
     show:
+      new_combo: "Neues Abo"
     new:
       title: "Neues Abo"
       

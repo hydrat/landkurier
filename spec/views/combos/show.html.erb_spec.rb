@@ -2,7 +2,12 @@ require 'spec_helper'
 
 describe "combos/show.html.erb" do
   before(:each) do
-    @combo = stub("Combo")
+    # @combo = stub("Combo")
+    @combo = mock_model(Combo,
+      :type => "Fixabo",
+      :name => "FixCombo"
+    ).as_null_object
+    
     assigns[:combo] = @combo
   end
   

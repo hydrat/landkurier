@@ -9,13 +9,13 @@ Feature: Manage fixcombos
     When I provide the details for a fixcombo
     And I press the submit button
     Then I should go to the show combo page
-    And I should see the fixcombo in my portfolio
+    And I should see the fixcombo
 
-    Scenario: Create a combo
-      Given I am logged in as "producer"
-      When I provide the name of combo
-      And I create the combo
-      Then I should see the combo
+  Scenario: Create a combo
+    Given I am logged in as "producer"
+    When I provide the name of combo
+    And I create the combo
+    Then I should see the combo
 
     # Scenario: Define the price of a combo
     #   Given a 

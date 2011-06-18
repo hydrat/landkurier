@@ -1,3 +1,6 @@
+#See also https://github.com/plataformatec/devise/wiki/How-To:-Test-with-Cucumber
+
+@user
 Feature: Users Profiles
   In order to buy and sell products
   As an user
@@ -9,12 +12,24 @@ Feature: Users Profiles
     | member@landkurier.ch | secret   |
     
 
+
   Scenario: Create a profile
     Given I am not logged in
-    And I am on the Register page
+    And I am on the register page
     When I provide my personal data
+    And I press "user_submit"
     Then a user profile should be created
+    And I should not be a producer
   
+  Scenario: Create a producer profile
+    Given I am not logged in
+    And I am on the register page
+    When I provide my personal data
+    And I say that I am a producer
+    And I press "user_submit"
+    Then a user profile should be created
+    And I should be a producer
+
   
     
   # Doesn't this belong in a Spec?

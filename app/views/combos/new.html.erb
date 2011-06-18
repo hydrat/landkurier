@@ -3,11 +3,12 @@
 <%= simple_form_for @combo do |f| %>
   <%= f.error_messages %>
   <%= f.input :type, :collection => ['FixCombo', 'FlexCombo'] %>
+  <%#= f.input :type_helper, :collection => ['FixCombo', 'FlexCombo'] %>
   <%= f.input :name %>
   <%= f.input :description %>
   <%= f.input :price %>
   <%= f.input :size %>
   
-  <%= f.submit %>
+  <%= f.submit %> <%= t('or')%> <%= link_to t('cancel'), combos_path %> 
 
 <% end %>
