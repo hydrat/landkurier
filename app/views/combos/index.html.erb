@@ -1,3 +1,7 @@
 <% title t('.title') %>
 
+<% for combo in @combos do %>
+  <%= link_to combo.name, combo_path(combo) %>
+<% end%>
+
 <%= link_to t('.create'), new_combo_path, :id => 'combo_new' if current_user.try(:producer?) %>
