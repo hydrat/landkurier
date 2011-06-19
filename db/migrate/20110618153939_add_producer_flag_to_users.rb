@@ -1,6 +1,6 @@
 class AddProducerFlagToUsers < ActiveRecord::Migration
   def self.up
-    add_column :users, :producer, :boolean
+    add_column :users, :producer, :boolean, :default => false
   end
 
   def self.down

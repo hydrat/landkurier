@@ -1,6 +1,10 @@
 class CombosController < ApplicationController
   
   respond_to :html
+  
+  def index
+    @combos = Combo.all
+  end
 
   def show
     @combo = Combo.find(params[:id])

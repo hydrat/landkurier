@@ -15,7 +15,7 @@ module NavigationHelpers
       combo_path('de', 1001)
     
     when /the new combos page/
-      new_fixcombos_path
+      new_combo_path
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

@@ -1,6 +1,6 @@
 Given /^the following users$/ do |table|
   table.hashes.each do |hash|  
-    Factory(:confirmed_user, hash)
+    FactoryGirl(:confirmed_user, hash)
   end
 end
 
@@ -16,7 +16,7 @@ end
 
 Then /^I should not be a producer$/ do
   @user = User.find_by_email('user@landkurier.ch')
-  @user.is_producer?.should be_false
+  @user.producer?.should be_false
 end
 
 When /^I say that I am a producer$/ do
@@ -25,7 +25,7 @@ end
 
 Then /^I should be a producer$/ do
   @user = User.find_by_email('user@landkurier.ch')
-  @user.is_producer?.should be_true
+  @user.producer?.should be_true
 end
 
 Given /^I am not registered with the email "([^"]*)"$/ do |email|

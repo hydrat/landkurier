@@ -6,13 +6,6 @@ Feature: Users Profiles
   As an user
   I want to create and manage my profile
   
-  Background:
-    Given the following users
-    | email                | password |
-    | member@landkurier.ch | secret   |
-    
-
-
   Scenario: Create a profile
     Given I am not logged in
     And I am on the register page

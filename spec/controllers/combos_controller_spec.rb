@@ -2,6 +2,8 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 
 describe CombosController, "GET show" do
+  # login_producer
+
   
   def mock_combo(stubs={})
     @mock_combo ||= mock_model(Combo, stubs)

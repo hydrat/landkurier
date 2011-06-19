@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= t('landkurier') %> - <%= content_for?(:title) ? yield(:title) : t.('untitled') %></title>
+    <title><%= t('landkurier') %> - <%= content_for?(:title) ? yield(:title) : t('untitled') %></title>
     <%= stylesheet_link_tag "application" %>
     <link rel="stylesheet" href="/stylesheets/blueprint/screen.css" type="text/css" media="screen, projection">
     <link rel="stylesheet" href="/stylesheets/blueprint/print.css" type="text/css" media="print">
