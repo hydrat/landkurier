@@ -1,4 +1,4 @@
-<% title t('.title') %>
+<% title Combo.model_name.human %>
 
 <% for combo in @combos do %>
   <%= link_to combo.name, combo_path(combo) %>

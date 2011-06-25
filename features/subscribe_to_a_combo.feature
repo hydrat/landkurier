@@ -1,8 +1,22 @@
-# @combo
-# Feature: Subscribe to a Combo (Gemueseabo)
-#   In order to receive regular delivery of products
-#   A consumer
-#   wants to subscribe to a combo
+@combo
+Feature: Subscribe to a Combo (Gemueseabo)
+  In order to receive regular delivery of products
+  A consumer
+  wants to subscribe to a combo
+
+  # Scenario: See all combos
+  #   Given a selection of combos
+  #   When I am on the combos page
+  #   Then I should see 
+  
+  Scenario: Subscribe a combo as a logged in user
+    Given a combo exists with name: "Superabo", price: "20.10", size: "3"
+    When I go to the show page for that combo
+    And I follow "subscribe_combo"
+    Then I should be on the new subscription page
+  
+  
+
 #   
 #   Scenario Outline: Show the formatted price
 #     Given a combo costing <price>
@@ -30,4 +44,3 @@
   #   Then I should see the price with decimals
 
     
-  # Scenario: Order a combo subscription

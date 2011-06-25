@@ -14,22 +14,8 @@ Feature: Manage fixcombos
 
   Scenario: Create a combo
     Given I am logged in as "producer"
-    And I am on the new combos page
+    And I am on the new combo page
     When I fill in "combo_name" with "NewCombo"
     When I fill in "combo_price" with "20.15"
     And I press "combo_submit"
     Then I should see "NewCombo"
-
-  # Scenario: Delete fixcombos
-  #   Given the following fixcombos:
-  #     ||
-  #     ||
-  #     ||
-  #     ||
-  #     ||
-  #   When I delete the 3rd fixcombos
-  #   Then I should see the following fixcombos:
-  #     ||
-  #     ||
-  #     ||
-  #     ||

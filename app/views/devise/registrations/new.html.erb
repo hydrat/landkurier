@@ -1,29 +1,30 @@
 <% title t('.title') %>
 
-<%#= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%#= f.input :email %>
-  <%#= f.input :password %>
-  <%#= f.input :password_confirmation %>
-  <%#= f.input :producer %>
+<%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <p><%= f.label :email %><br />
-  <%= f.email_field :email %></p>
-
-  <p><%= f.label :password %><br />
-  <%= f.password_field :password %></p>
-
-  <p><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></p>
-
-  <p><%= f.label :producer %><br />
-  <%= f.check_box :producer %></p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.input_field :email %>
+  </p>
+  
+  <p>
+    <%= f.label :password %><br />
+    <%= f.input_field :password %>
+  </p>
 
   <p>
-    <%= f.submit t('.submit') %> <%= t('or')%> <%= link_to t('cancel'), root_url %>
+    <%= f.label :password_confirmation %><br />
+    <%= f.input_field :password_confirmation %>
   </p>
+
+  <p>
+    <%= f.input :producer, :label => t('.iamproducer') %>
+  </p>
+  
+  <%= f.submit t('.submit') %> <%= t('or')%> <%= link_to t('cancel'), root_url %>
+
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

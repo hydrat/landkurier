@@ -6,6 +6,7 @@ de:
       expired: "ist abgelaufen, bitte beantragen Sie ein neues."
       not_found: "nicht gefunden"
       already_confirmed: "wurde bereits bestätigt"
+      unconfirmed: "nicht bestätigt" 
       not_locked: "ist nicht gesperrt"
       not_saved:
         one: "Ein Fehler verhinderte die Erstellung Ihres Profils:"
@@ -32,11 +33,11 @@ de:
       updated: 'Ihr Passwort wurde geändert. Sie sind angemeldet.'
     registrations:
       signed_up: 'Sie haben sich erfolgreich registriert. Es kann sein, dass Sie eine Aktivierungs-E-Mail erhalten.'
-      inactive_signed_up: 'You have signed up successfully. However, we could not sign you in because your account is %{reason}.'
+      inactive_signed_up: 'Sie haben sich erfolgreich registriert. Leider konnten wir Sie nicht anmelden, weil Ihr Account ist %{reason}.'
       updated: 'Die Angaben wurden erfolgreich geändert.'
       destroyed: 'Ihr Account wurde erfolgreich gelöscht.'
     unlocks:
-      send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie Ihren Account entsperren kÃ¶nnen.'
+      send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie Ihren Account entsperren können.'
       unlocked: 'Ihr Account wurde entsperrt. Sie sind angemeldet.'
     omniauth_callbacks:
       success: 'Erfolgreich mit dem %{kind}-Account angemeldet.'

@@ -18,10 +18,4 @@ FactoryGirl.define do
     f.after_create { |user| user.confirm! }
   end
   
-  
-  factory :combo do
-    name "Factory Abo"
-    price 39.95
-  end
-  
 end

@@ -3,6 +3,7 @@ de:
     registrations:
       new:
         title: "Registration"
+        iamproducer: "Ich bin ProduzentIn"
         submit: "Erstellen"
     sessions:
       new:

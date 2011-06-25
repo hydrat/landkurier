@@ -1,7 +1,7 @@
 de:
   combos:
     index:
-      title: "Abos"
+      # title: "Abos"
       create: "Neues Abo erstellen"
     show:
       new_combo: "Neues Abo"

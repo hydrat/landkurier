@@ -7,3 +7,9 @@
   <%= Combo.human_attribute_name("price") %>:
   <%= number_to_francs(@combo.price) %>
 </p> 
+<p>
+  <%= Combo.human_attribute_name("size") %>:
+  <%= @combo.size %>
+</p>
+
+<%= link_to t('.subscribe_combo'), new_subscription_path(:combo => @combo.id), :id => "subscribe_combo" %>

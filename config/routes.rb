@@ -1,6 +1,12 @@
 Landkurier::Application.routes.draw do
 
+
   scope "(:locale)", :locale => /en|de|fr|it/ do
+
+    resources :apps
+    resources :combos
+    resources :subscriptions
+    
     # devise_for :users
     # See http://stackoverflow.com/questions/5180295/how-to-change-the-login-and-signup-urls-in-devise-plugin-rails3
     devise_for :users, :controllers => {:sessions => 'devise/sessions'}, :skip => [:sessions] do
@@ -12,9 +18,6 @@ Landkurier::Application.routes.draw do
     match "/login" => "devise/sessions#new"
     match "/logout" => "devise/sessions#destroy"
     match "/register" => "devise/registrations#new"
-
-    resources :apps
-    resources :combos
 
   end
 

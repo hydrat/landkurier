@@ -1,3 +1,11 @@
+# setup :set_default_locale 
+# 
+# def set_default_locale
+#   def @request.query_parameters
+#     {:locale => "de"}.merge(@query_parameters)
+#   end
+# end
+
 Given /^a combo costing (\d+)$/ do |price|
   @combo= Combo.create!(:price => price)
 end

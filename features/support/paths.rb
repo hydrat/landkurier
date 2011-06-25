@@ -11,11 +11,8 @@ module NavigationHelpers
     when /^the home\s?page$/
       '/'
       
-    when /^the show combo page/
-      combo_path('de', 1001)
-    
-    when /the new combos page/
-      new_combo_path
+    when /the show page for (.+)/  
+      polymorphic_path(model($1))
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
