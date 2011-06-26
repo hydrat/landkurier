@@ -8,6 +8,7 @@ class CombosController < ApplicationController
 
   def show
     @combo = Combo.find(params[:id])
+    session[:combo_id] = @combo.id
   end
 
   def new

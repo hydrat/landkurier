@@ -4,7 +4,9 @@ Landkurier::Application.routes.draw do
   scope "(:locale)", :locale => /en|de|fr|it/ do
 
     resources :apps
-    resources :combos
+    resources :combos do 
+      resources :subscriptions
+    end
     resources :subscriptions
     
     # devise_for :users

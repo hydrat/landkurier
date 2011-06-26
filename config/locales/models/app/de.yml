@@ -1,0 +1,7 @@
+de:
+  activerecord:
+    models:
+      app: "Dienst"
+    attributes:
+      app:
+        name: "Bezeichnung"

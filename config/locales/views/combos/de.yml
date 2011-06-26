@@ -2,9 +2,10 @@ de:
   combos:
     index:
       # title: "Abos"
-      create: "Neues Abo erstellen"
+      create: "Neues Chischtli erstellen"
     show:
-      new_combo: "Neues Abo"
+      new_combo: "Neues Chischtli"
+      subscribe_combo: 'Chischtli abonnieren'
     new:
-      title: "Neues Abo"
+      title: "Neues Chischtli"
       

@@ -1,4 +1,4 @@
-<% title "Apps" %>
+<% title App.model_name.human %>
 
 <%= link_to "Gemüseabo", combos_path %>
 
@@ -8,7 +8,10 @@
   </tr>
   <% for app in @apps %>
     <tr>
-      <td><%= app.name %></td>
+      <td>
+        <%= link_to app.name, combos_path %>
+        <%#= link_to app.name, get_app_path(app.name) %>
+      </td>
     </tr>
   <% end %>
 </table>

@@ -1,5 +1,4 @@
-<h1><%= Combo.model_name.human %></h1>
-
+<% title Combo.model_name.human %>
 
 <h2><%= @combo.name %></h2>
 
@@ -12,4 +11,4 @@
   <%= @combo.size %>
 </p>
 
-<%= link_to t('.subscribe_combo'), new_subscription_path(:combo => @combo.id), :id => "subscribe_combo" %>
+<%= link_to t('.subscribe_combo'), new_subscription_path, :id => "subscribe_combo" %>
