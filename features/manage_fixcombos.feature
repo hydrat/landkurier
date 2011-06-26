@@ -1,4 +1,4 @@
-@combo
+#@combo
 Feature: Manage fixcombos
   In order to allow consumers to subscribe to a regular delivery of my products without them being able to change the content of the shipment
   A producer

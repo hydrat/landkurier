@@ -1,5 +1,4 @@
-@combo
-Feature: Subscribe to a Combo (Gemueseabo)
+Feature: Subscribe to a Combo
   In order to receive regular delivery of products
   A consumer
   wants to subscribe to a combo
@@ -9,11 +8,28 @@ Feature: Subscribe to a Combo (Gemueseabo)
   #   When I am on the combos page
   #   Then I should see 
   
-  Scenario: Subscribe a combo as a logged in user
-    Given a combo exists with name: "Superabo", price: "20.10", size: "3"
+  Scenario: Navigate to Subscription page after having chosen a Combo
+    Given a combo exists with name: "Superkiste", price: "20.10", size: "3"
     When I go to the show page for that combo
     And I follow "subscribe_combo"
-    Then I should be on the new subscription page
+    Then I should be on the combo's new subscription page
+  
+  Scenario: Tell the producer which products not to put in the Combo
+    Given a combo exists with name: "Dieses Chischtli will i", price: "18.12", size: "3"
+    When I go to the combo's new subscription page
+    And I fill in "Knoblauch, Knollensellerie und Rosenkohl" for "subscription_exclusions"
+    And I press "subscription_submit"
+    Then I should see "Knoblauch, Knollensellerie und Rosenkohl"
+
+  @combo
+  Scenario: I want to receive my Combo every 2 weeks
+    Given a combo exists with name: "Dieses Chischtli will i", price: "18.12", size: "3"
+    When I go to the combo's new subscription page
+    And I fill in # Alle 2 Wochen for "subscription_periodicity"
+    And I press "subscription_submit"
+    Then #I should receive a ComboBox every two weeks
+    
+  
   
   
 

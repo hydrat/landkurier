@@ -3,10 +3,5 @@ de:
     models:
       subscription: "Abo"
     attributes:
-      combo:
-        name: "Bezeichnung"
-        description: "Beschreibung"
-        type: "Abotyp"
-        price: "Preis"
-        size: "Grösse"
-        provider: "Anbieter"
+      subscription:
+        exclusions: "Ausnahmen"
