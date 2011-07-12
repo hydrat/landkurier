@@ -7,5 +7,5 @@ de:
         email: "Email"
         password: "Passwort"
         password_confirmation: "Passwort-Bestätigung"
-        producer: "Produzent"
+        type: "Konsument oder Produzent?"
         remember_me: "Anmeldung speichern"

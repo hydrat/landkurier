@@ -16,6 +16,7 @@ describe "combos/new.html.erb" do
 
     view.should render_template(:new)
     rendered.should have_selector("form select[@id='combo_type']")
+    rendered.should have_selector("form select[@id='combo_periodicity']")
     # rendered.should have_selector("form select[@id='combo_type_helper']")
     rendered.should have_selector("form input[@id='combo_name']")
     rendered.should have_selector("form textarea[@id='combo_description']")

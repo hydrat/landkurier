@@ -5,8 +5,6 @@ Given /^I am logged in as "([^"]*)"$/ do |role|
   fill_in 'user_email', :with => producer.email
   fill_in 'user_password', :with => producer.password
   click_button 'user_submit'
-  # user_signed_in?.should be_true
-  # current_user.producer?.should be_true  
 end
 
 # When /^I provide the details for a fixcombo$/ do

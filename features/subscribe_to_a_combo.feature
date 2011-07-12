@@ -29,6 +29,13 @@ Feature: Subscribe to a Combo
     And I press "subscription_submit"
     Then #I should receive a ComboBox every two weeks
     
+  Scenario: I want to pay for my Combo Subscription
+    Given a combo exists with name: "Dieses Chischtli will i", price: "18.12", size: "3"
+    And I am on the combo's new subscription page
+    When I press "subscription_submit"
+    Then I should see details of my subscriptions for verification
+    And the subscription should be in my cart
+    
   
   
   

@@ -1,0 +1,3 @@
+class Producer < User
+
+end

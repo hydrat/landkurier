@@ -32,7 +32,7 @@ de:
       send_instructions: 'Sie erhalten in wenigen Minuten eine E-Mail mit der Anleitung, wie Sie ihr Passwort zurücksetzten können.' 
       updated: 'Ihr Passwort wurde geändert. Sie sind angemeldet.'
     registrations:
-      signed_up: 'Sie haben sich erfolgreich registriert. Es kann sein, dass Sie eine Aktivierungs-E-Mail erhalten.'
+      signed_up: 'Sie haben sich erfolgreich registriert.'
       inactive_signed_up: 'Sie haben sich erfolgreich registriert. Leider konnten wir Sie nicht anmelden, weil Ihr Account ist %{reason}.'
       updated: 'Die Angaben wurden erfolgreich geändert.'
       destroyed: 'Ihr Account wurde erfolgreich gelöscht.'

@@ -1,21 +1,14 @@
 require 'factory_girl'
 
 FactoryGirl.define do
-  factory :unconfirmed_user, :class => User do
-    email "factory_member@landkurier.ch"
-    password "factory_secret"
-    producer false
+  factory :user do
+    email "factory_user@landkurier.ch"
+    password "user_secret"
   end
   
-  factory :user, :parent => :unconfirmed_user do |f|
-    email "factory_confirmed_member@landkurier.ch"
-    f.after_create { |user| user.confirm! }
-  end
-  
-  factory :producer, :parent => :unconfirmed_user do |f|
+  factory :producer do |f|
     email "factory_producer@landkurier.ch"
-    producer true
-    f.after_create { |user| user.confirm! }
+    password "producer_secret"
   end
   
 end

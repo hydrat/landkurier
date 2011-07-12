@@ -1,6 +1,6 @@
 #@combo
 Feature: Manage fixcombos
-  In order to allow consumers to subscribe to a regular delivery of my products without them being able to change the content of the shipment
+  In order to allow consumers to subscribe to a regular delivery of his products without them being able to change the content of the individual shipment
   A producer
   wants to create and manage a fixcombo
   

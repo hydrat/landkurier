@@ -18,11 +18,12 @@
     <%= f.label :password_confirmation %><br />
     <%= f.input_field :password_confirmation %>
   </p>
-
-  <p>
-    <%= f.input :producer, :label => t('.iamproducer') %>
-  </p>
   
+  <p>
+    <%= f.label :type %><br />
+    <%= f.select :type, ['Consumer', 'Producer'] %>
+  </p>
+
   <%= f.submit t('.submit') %> <%= t('or')%> <%= link_to t('cancel'), root_url %>
 
 <% end %>

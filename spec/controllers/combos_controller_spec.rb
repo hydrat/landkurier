@@ -36,14 +36,14 @@ describe CombosController, "POST create" do
     post :create
   end
   
-  context "when the cobo saves successfully" do
+  context "when the combo saves successfully" do
     before(:each) do
       @combo.stub!(:save).and_return true
     end  
     
     it "should set a flash[:notice] message" do
       post :create
-      flash[:notice].should == "Sie haben erfolgreich ein neues Abo erstellt."
+      flash[:notice].should == "Sie haben erfolgreich ein neues Chischtli erstellt."
     end
 
     it "should render the show template" do
@@ -52,7 +52,7 @@ describe CombosController, "POST create" do
     end
   end
   
-  context "when the cobo fails to save" do
+  context "when the combo fails to save" do
     before(:each) do
       @combo.stub!(:save).and_return false
     end

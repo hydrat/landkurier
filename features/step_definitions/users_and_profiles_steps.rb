@@ -16,16 +16,16 @@ end
 
 Then /^I should not be a producer$/ do
   @user = User.find_by_email('user@landkurier.ch')
-  @user.producer?.should be_false
+  @user.type.should == "Consumer"
 end
 
 When /^I say that I am a producer$/ do
-  check('user_producer')
+  select('Producer', :from => 'user_type')
 end
 
 Then /^I should be a producer$/ do
   @user = User.find_by_email('user@landkurier.ch')
-  @user.producer?.should be_true
+  @user.type.should == "Producer"
 end
 
 Given /^I am not registered with the email "([^"]*)"$/ do |email|
