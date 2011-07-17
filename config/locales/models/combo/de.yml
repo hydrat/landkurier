@@ -10,3 +10,17 @@ de:
         price: "Preis"
         size: "Grösse"
         provider: "Anbieter"
+        periodicity: "Periodizität"
+        periodicities:
+          daily: "Täglich"
+          semiweekly: "Halbwöchentlich"
+          weekly: "Wöchentlich"
+          biweekly: "Zweiwöchentlich"
+          monthly: "Monatlich"
+    errors:
+      models:
+        combo:
+          attributes:
+            periodicity:
+              inclusion: "fehlt"
+        

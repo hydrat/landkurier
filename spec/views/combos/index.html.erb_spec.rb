@@ -14,7 +14,7 @@ describe "combos/index.html.erb" do
     it "should show create link to producer" do
       sign_in Factory.create(:producer)
       render
-      rendered.should have_content("Neues Abo erstellen")
+      rendered.should have_content("Neues Chischtli erstellen")
     end
   end
 

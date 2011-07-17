@@ -17,5 +17,6 @@ Feature: Manage fixcombos
     And I am on the new combo page
     When I fill in "combo_name" with "NewCombo"
     When I fill in "combo_price" with "20.15"
+    When I fill in "combo_periodicity" with "weekly"
     And I press "combo_submit"
     Then I should see "NewCombo"

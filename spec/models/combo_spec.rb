@@ -6,8 +6,8 @@ describe Combo do
     Combo.new(:name => "MyCombo", :price => 19.95).should be_valid
   end
   
-  it "should have a periodicty" do
-    pending
+  it "should have a periodicity" do
+    Combo.new(:name => "MyCombo", :price => 19.95).should be_valid    
   end
   
 end

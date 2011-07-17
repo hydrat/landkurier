@@ -8,6 +8,9 @@
   <%= f.input :description %>
   <%= f.input :price %>
   <%= f.input :size %>
+  <%= f.input :periodicity, :collection => Combo::PERIODICITIES.sort.map {|k,v| [t("activerecord.attributes.combo.periodicities.#{v}") ,k]} %>
+  <%#= f.input :periodicity, :collection => Combo::PERIODICITIES.sort.map {|k,v| [v,k]} %>
+  
   
   <%= f.submit %> <%= t('or')%> <%= link_to t('cancel'), combos_path %> 
 

@@ -6,12 +6,12 @@ FactoryGirl.define do
     "Chischtli_#{d}"
   end
   
-  
   factory :combo do
-    name {  Factory.create(:name) }
+    name # Automatically takes value from sequence above, alternatively { Factory.next(:name) }
     price Random.rand
     description "Die faktorielle Beschreibung"
-    size Random.rand(7)
+    periodicity 3
+    # periodicity "biweekly"
   end
 
   factory :fix_combo, :parent => :combo do

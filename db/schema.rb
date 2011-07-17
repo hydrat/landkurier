@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20110711195532) do
 
   create_table "combos", :force => true do |t|
     t.integer  "provider_id"
+    t.string   "provider_type"
     t.string   "name"
     t.decimal  "price"
     t.string   "type"

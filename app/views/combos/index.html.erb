@@ -4,4 +4,4 @@
   <%= link_to combo.name, combo_path(combo) %>
 <% end%>
 
-<%= link_to t('.create'), new_combo_path, :id => 'combo_new' if current_user.try(:producer?) %>
+<%= link_to t('.create'), new_combo_path, :id => 'combo_new' if can? :create, Combo %>

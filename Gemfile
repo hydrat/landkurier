@@ -5,6 +5,7 @@ gem 'rails', '3.0.9'
 gem 'pg'
 
 gem 'devise'
+gem 'cancan'
 
 gem 'simple_form'
 
